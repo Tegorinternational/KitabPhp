@@ -4,8 +4,8 @@ require_once('config.php');
 require_once('razorpay/razorpay-php/Razorpay.php');
 
 use Razorpay\Api\Api;
-$razorpay_key_id = 'rzp_test_KZLNqSzQRFC152';
-$razorpay_key_secret = 'dFesi3jdOHIFYeMVUojQgU47';
+$razorpay_key_id = 'YOUR_API_KEY_ID';
+$razorpay_key_secret = 'YOUR_API_KEY_SECRET';
 $api = new Api($razorpay_key_id, $razorpay_key_secret);
 
 $orderId = $_POST['razorpay_order_id'];
